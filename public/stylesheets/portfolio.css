@@ -1,0 +1,123 @@
+body,html{
+  margin:0;
+  padding:0;
+}
+
+header {
+  font-family: 'Raleway', sans-serif;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+.intro {
+  width:100%;
+  height:100vh;
+  min-height: 700px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0px;
+  position: relative;
+  color:white;
+}
+
+.introImage {
+  background-image: url('../images/suitandtie.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.intro h1 {
+  margin-top: 8em;
+}
+
+.intro p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.workButton {
+  visibility: hidden;
+}
+
+.workButton:hover {
+  color: white;
+  background-color: black;
+}
+
+
+.overlay:before {
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: block;
+  z-index:-1;
+  background-color: rgba(0,0,0,0.50);
+}
+
+
+
+
+.introImage, .aboutImage .projectsImage * {
+    position: relative;
+    /* hack */
+}
+
+.row .bg-light {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.propic img{
+  width: 200px;
+  height: 200px;
+  margin-top: 15em;
+}
+
+.nav-colored {
+  background-color: rgba(0, 0, 0, 1) !important;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+}
+
+h1 {
+  margin-top: 2em;
+  font-family: 'Abril Fatface', cursive;
+}
+
+
+
+.about {
+  height:100vh;
+  min-height: 700px;
+  width: 100%;
+}
+
+#aboutPic, #aboutTitle, #aboutSummary {
+  display: none;
+}
+
+.eighties {
+  height: auto;
+  width: 20em;
+}
+
+.projects {
+  height: auto;
+  width: 100%;
+}
+
+.reviews {
+  height: auto;
+  width: 100%;
+}
+
+.contact {
+  height: auto;
+  width: 100%;
+}

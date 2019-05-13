@@ -1,0 +1,46 @@
+extends layout.Pug
+
+block content
+
+  div.intro.introImage.overlay
+    div.col-5.text-center.mx-auto
+      h1.text-center.text-light I'm <span id='swapText')></span>
+      a.btn.btn-light.mt-5.workButton( href="#projects" ) See My Work
+  div.projects.projectsImage(id='projects')
+    h1.pt-5.text-center Projects
+    div.container.row.mt-5.justify-content-between.col-10.mx-auto
+      div.card.col-lg-2.mt-3.p-2
+        a(href='https://www.thephotoboothlady.com' target="_blank")
+          img.card-img-top.img-fluid(src="/images/thephotoboothlady.jpg")
+        p.card-text.text-center <strong>The Photo Booth Lady</strong>
+        p.card-text.p-2.m-0 thephotoboothlady.com provides photo booths to parties, weddings and conventions in need of a photo booth.
+      div.card.col-lg-2.mt-3.p-2
+        a(href='https://www.tasteofheavencafe.com/' target="_blank")
+          img.card-img-top(src="/images/tasteofheaven.jpg")
+        p.card-text.text-center <strong>Taste Of Heaven Cafe</strong>
+        p.card-text.p-2.m-0 tasteofheavencafe.com is a catering business serving parties, weddings, meetings and any one else in need of catering services in the Charlotte, NC area.
+      div.card.col-lg-2.mt-3.p-2
+        a(href='https://www.airtemp.com' target="_blank")
+          img.card-img-top(src="/images/airtemp.jpg")
+        p.card-text.text-center <strong>Airtemp</strong>
+        p.card-text.p-2.m-0 airtemp.com is a subsiderary of R.E. Michel Company. Providing HVAC services to residential homes nationwide.
+      div.card.col-lg-2.mt-3.p-2
+        a(href='http://www.brandpromoter.info' target="_blank")
+          img.card-img-top(src="/images/marcella.jpg")
+        p.card-text.text-center <strong>Marcella Lee</strong>
+        p.card-text.p-2.m-0 marcellalee.com is an online tshirt business coming soon. (Building in progress)
+  div.contact.bg-light(id='contact')
+    h1.pt-5.text-center Contact Me
+    div.col-8.col-lg-4.mx-auto
+      form.pt-5.pb-5.form(method='POST' action='php/process.php' id='contact-form')
+          div.form-group
+            label(for='name') Name:
+            input#name.form-control(type='text', placeholder='First and Last please' name='name')
+          div.form-group
+            label(for='email') Email:
+            input#email.form-control(type='email', placeholder='name@email.com' name='email')
+          div.form-group
+            label(for='phone') Phone Number:
+            input#email.form-control(type='tel', placeholder='Please enter your phone number...' name='phone')
+          div.text-center
+            button.btn.btn-dark(type='submit') Sign up

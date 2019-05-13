@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+  head
+    title Keith Winfield - Portfolio
+    link(rel='icon' type='image/jpg' href='/images/suitandtie.jpg')
+    link(href='/bootstrap/bootstrap.css', rel='stylesheet')
+    link(href='/stylesheets/portfolio.css', rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css?family=Abril+Fatface", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Raleway", rel="stylesheet")
+  body
+    header
+      nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.pt-3
+        a.navbar-brand(href='#') Keith Winfield
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+
+        .collapse.navbar-collapse(id='navbarSupportedContent')
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='#projects') PROJECTS
+            li.nav-item
+              a.nav-link(href='#contact') CONTACT
+    block content
+    footer.page-footer.font-small.bg-secondary.text-white.text-center.p-4
+      h6 Keith Winfield~keith.r.winfield@gmail.com
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js", integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous", type="text/javascript")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous", type="text/javascript")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous", type="text/javascript")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous", type="text/javascript")
+    script(src='/js/portfolio.js', type="text/javascript")
